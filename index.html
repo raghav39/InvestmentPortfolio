@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="javascript/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="javascript/highcharts.js"></script>
+    <script src="javascript/exporting.js"></script>
+    <script src="javascript/index.js"></script>
+    <style>
+    .input-group {
+        margin: 30px;
+        width:450px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Age</span>
+        <input type="text" class="form-control" id="age" placeholder="Your age please?">
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Income</span>
+        <input type="text" class="form-control" id="income" placeholder="How much do you earn? (do not put commas)">
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Savings</span>
+        <input type="text" class="form-control" id="savings" placeholder="Psst.. What percentage do you save?">
+        <span class="input-group-addon">%</span>
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Risk</span>
+        <input type="text" class="form-control" id="risk-tolerance" placeholder="How much is your risk tolerance? (in percentage)">
+        <span class="input-group-addon">%</span>
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Assets</span>
+        <input type="text" class="form-control" id="liquid-assets" placeholder="How much liquid assets?">
+    </div>
+    <center>
+        <button type="button" class="btn btn-success" onclick="calculateInvestment()">Tell me how much should I invest</button>
+    </center>
+    <br/>
+    <br/>
+    <div id="container" style="width: 60%; height: 400px; margin: 0 auto;float:left"></div>
+    <div id="containerChotaWala" style="width: 40%; height: 400px; margin: 0 auto;float:right"></div>
+</body>
+
+</html>
