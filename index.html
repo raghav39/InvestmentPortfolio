@@ -14,7 +14,11 @@
     <style>
     .input-group {
         margin: 30px;
-        width:450px;
+        width: 450px;
+    }
+    
+    .btn-group {
+        margin: 30px;
     }
     </style>
 </head>
@@ -30,13 +34,58 @@
     </div>
     <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">Savings</span>
-        <input type="text" class="form-control" id="savings" placeholder="Psst.. What percentage do you save?">
+        <input type="text" class="form-control" id="savings" placeholder="Psst.. What percentage do you save per month?">
         <span class="input-group-addon">%</span>
     </div>
     <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">Risk</span>
         <input type="text" class="form-control" id="risk-tolerance" placeholder="How much is your risk tolerance? (in percentage)">
         <span class="input-group-addon">%</span>
+    </div>
+    <div style="margin-left:30px;background:#EEEEEE;padding:10px">
+        <div style="margin-left:30px;">
+            Expected Outflow
+        </div>
+        <div class="btn-group" role="group" aria-label="1-5Y-expectedOF">
+            <button type="button" class="btn">1-5 Years</button>
+            <select id="1-5Y-expectedOF" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <option value="Very-Low">Very Low</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+                <option value="Very-High">Very High</option>
+            </select>
+        </div>
+        <div class="btn-group" role="group" aria-label="5-10Y-expectedOF">
+            <button type="button" class="btn">5-10 Years</button>
+            <select id="5-10Y-expectedOF" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <option value="Very-Low">Very Low</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+                <option value="Very-High">Very High</option>
+            </select>
+        </div>
+        <div class="btn-group" role="group" aria-label="10-20Y-expectedOF">
+            <button type="button" class="btn">10-20 Years</button>
+            <select id="10-20Y-expectedOF" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <option value="Very-Low">Very Low</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+                <option value="Very-High">Very High</option>
+            </select>
+        </div>
+        <div class="btn-group" role="group" aria-label=">20Y-expectedOF">
+            <button type="button" class="btn">>20 Years</button>
+            <select id="20Y-expectedOF" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <option value="Very-Low">Very Low</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+                <option value="Very-High">Very High</option>
+            </select>
+        </div>
     </div>
     <div class="input-group">
         <span class="input-group-addon" id="basic-addon1">Assets</span>
